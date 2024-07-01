@@ -12,12 +12,12 @@ class AppConstant {
   static Color primaryColor = const Color(0xFF27CA42);
   static Color scaffoldColor = Colors.white;
   static Color primaryTextColor = const Color(0xFF0A141B);
-  static Color secondaryTextColor =const Color.fromARGB(255, 86, 94, 100);
+  static Color secondaryTextColor = const Color.fromARGB(255, 86, 94, 100);
   static Color dividerColor = const Color.fromARGB(255, 226, 222, 222);
 
   static List<IconData> tabIconList = [
     Icons.message,
-    Icons.change_circle_outlined,
+    Icons.psychology_outlined,
     Icons.groups_2_outlined,
     Icons.phone_outlined,
   ];

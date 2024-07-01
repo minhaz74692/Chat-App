@@ -11,6 +11,13 @@ class NecessaryMethods {
         textColor: Colors.white,
         fontSize: 16.0);
   }
+   static bool sameDateCheck(DateTime date1, date2) {
+    DateTime date1WithoutTime = DateTime(date1.year, date1.month, date1.day);
+    DateTime date2WithoutTime = DateTime(date2.year, date2.month, date2.day);
+
+    return date1WithoutTime == date2WithoutTime;
+  }
+
 
   static bool signUpValidation(
       String email, String password, String name, String phone) {

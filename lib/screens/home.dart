@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:chat_app/screens/chat/views/chat_screen.dart';
+import 'package:chat_app/utils/helper.dart';
 import 'package:flutter/material.dart';
 
 // import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -40,13 +42,13 @@ class _HomeState extends State<Home> {
 
   List<Widget> tabScreens = [
     HomeScreen(),
-    HomeScreen(),
+    ChatScreen(),
     HomeScreen(),
     HomeScreen(),
   ];
   List<String> titleList = [
     "Chats",
-    "Updates",
+    "AI Assistant",
     "Communities",
     "Calls",
   ];
@@ -82,11 +84,21 @@ class _HomeState extends State<Home> {
       },
       activeIndex: _bottomNavIndex,
       gapLocation: GapLocation.none,
-      notchSmoothness: NotchSmoothness.verySmoothEdge,
-      leftCornerRadius: 32,
-      rightCornerRadius: 32,
+      // notchSmoothness: NotchSmoothness.verySmoothEdge,
+      // leftCornerRadius: 32,
+      // rightCornerRadius: 32,
 
-      onTap: (index) => setState(() => _bottomNavIndex = index),
+      onTap: (index) {
+        setState(
+          () => _bottomNavIndex = index,
+        );
+        index == 1
+            ? Helper.toScreen(
+                context,
+                ChatScreen(),
+              )
+            : _pageController.jumpToPage(index);
+      },
       //other params
     );
   }

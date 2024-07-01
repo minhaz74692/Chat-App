@@ -9,6 +9,7 @@
 .history
 .svn/
 migrate_working_dir/
+.env
 
 /lib/firebase_options.dart
 /android/app/google-services.json
