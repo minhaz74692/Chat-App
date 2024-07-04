@@ -24,57 +24,58 @@ class ChatScreenAppBar extends StatelessWidget {
             },
             icon: Icon(Icons.close),
           ),
-          Container(
-            height: 44,
-            width: 44,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(44),
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(44),
-              child: Image.asset(
-                "assets/png/avatar1.png",
-              ),
-            ),
-          ),
+          // Container(
+          //   height: 44,
+          //   width: 44,
+          //   decoration: BoxDecoration(
+          //     color: Colors.white,
+          //     borderRadius: BorderRadius.circular(44),
+          //   ),
+          //   child: ClipRRect(
+          //     borderRadius: BorderRadius.circular(44),
+          //     child: Image.asset(
+          //       "assets/png/avatar1.png",
+          //     ),
+          //   ),
+          // ),
           SizedBox(
             width: 6,
           ),
           Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Drake Danvers",
+                "AI Assistant- Gemini",
                 style: interStyle16_600,
               ),
-              SizedBox(
-                height: 4,
-              ),
-              Text(
-                "Online",
-                style:
-                    interStyle12_400.copyWith(color: AppColors.inactiveColor),
-              ),
+              // SizedBox(
+              //   height: 4,
+              // ),
+              // Text(
+              //   "Online",
+              //   style:
+              //       interStyle12_400.copyWith(color: AppColors.inactiveColor),
+              // ),
             ],
           ),
           Spacer(),
-          GestureDetector(
-            onTap: () {
-              Fluttertoast.showToast(msg: "Need to configure call system");
-            },
-            child: Container(
-              width: 21,
-              height: 21,
-              decoration:
-                  BoxDecoration(borderRadius: BorderRadius.circular(21)),
-              child: Icon(
-                Icons.phone,
-                color: Color(0xFF008951),
-                size: 21,
-              ),
-            ),
-          ),
+          // GestureDetector(
+          //   onTap: () {
+          //     Fluttertoast.showToast(msg: "Need to configure call system");
+          //   },
+          //   child: Container(
+          //     width: 21,
+          //     height: 21,
+          //     decoration:
+          //         BoxDecoration(borderRadius: BorderRadius.circular(21)),
+          //     child: Icon(
+          //       Icons.phone,
+          //       color: Color(0xFF008951),
+          //       size: 21,
+          //     ),
+          //   ),
+          // ),
           SizedBox(
             width: 16,
           ),

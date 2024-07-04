@@ -12,14 +12,14 @@ import 'package:google_generative_ai/google_generative_ai.dart';
 
 // import 'package:web_socket_channel/status.dart' as status;
 
-class ChatScreen extends StatefulWidget {
-  const ChatScreen({super.key});
+class GeminiChatScreen extends StatefulWidget {
+  const GeminiChatScreen({super.key});
 
   @override
-  State<ChatScreen> createState() => _ChatScreenState();
+  State<GeminiChatScreen> createState() => _GeminiChatScreenState();
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class _GeminiChatScreenState extends State<GeminiChatScreen> {
   final TextEditingController _controller = TextEditingController();
 
   late final GenerativeModel _model;

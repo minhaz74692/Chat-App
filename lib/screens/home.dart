@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:chat_app/screens/chat/views/chat_screen.dart';
+import 'package:chat_app/screens/chat/views/ai_chat_screen.dart';
 import 'package:chat_app/utils/helper.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
 
   List<Widget> tabScreens = [
     HomeScreen(),
-    ChatScreen(),
+    GeminiChatScreen(),
     HomeScreen(),
     HomeScreen(),
   ];
@@ -95,7 +95,7 @@ class _HomeState extends State<Home> {
         index == 1
             ? Helper.toScreen(
                 context,
-                ChatScreen(),
+                GeminiChatScreen(),
               )
             : _pageController.jumpToPage(index);
       },
